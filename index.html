@@ -3,16 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Player</title>
+    <title>Hannah's Sound - Total Geil!!!</title>
     <style>
-        body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0; }
-        audio { width: 80%; max-width: 500px; }
+        body {
+            font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif; /* Der Klassiker! */
+            background-color: #00FFFF; /* Knalliges Cyan */
+            color: #FF00FF; /* Knalliges Magenta */
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://web.archive.org/web/20091027103135/http://geocities.com/Tokyo/Temple/4694/stars.gif'); /* Optional: Animiertes GIF, 2000er-Feeling pur! */
+            background-repeat: repeat;
+        }
+        .container {
+            background-color: #FFFF00; /* Grelles Gelb als Hintergrund für den Inhalt */
+            border: 5px dashed #FF0000; /* Gestrichelter roter Rahmen, sehr 2000er */
+            padding: 25px;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.75); /* Klobiger Schatten */
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #0000FF; /* Blau */
+            font-size: 3em; /* Großer Text */
+            text-shadow: 3px 3px #FF00FF; /* Farbschatten */
+            animation: blink 1s infinite; /* Optional: Blinkender Text! */
+        }
+        p {
+            font-size: 1.2em;
+            color: #008000; /* Grün */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #FFD700; /* Goldener Rahmen ums Bild */
+            margin-top: 20px;
+            box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.5);
+        }
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 30px;
+            border: 2px solid #800080; /* Lila Rahmen um den Player */
+            background-color: #ADD8E6; /* Hellblau */
+        }
+
+        /* Optional: CSS für den Blinking-Effekt (sehr 2000er!) */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
     </style>
 </head>
 <body>
-    <audio controls autoplay>
-        <source src="UnserSouns.mp3" type="audio/mpeg">
-        Ihr Browser unterstützt das Audio-Element nicht.
-    </audio>
+    <div class="container">
+        <h1>Welcome to Hannah's Awesome Page!</h1>
+        <p>Der Sound Frankfurts - check it out NOW!!!</p>
+        
+        <img src="hannah_bild.jpg" alt="Hannah's cooles Bild">
+        
+        <audio controls autoplay>
+            <source src="unsersound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p style="font-size: 0.8em; color: #800080; margin-top: 15px;">* If the music doesn't start automatically, please click the play button!</p>
+        <p style="font-size: 0.7em; color: #FF00FF;">Besucher seit: 1</p> </div>
 </body>
 </html>
