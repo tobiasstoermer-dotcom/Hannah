@@ -12,10 +12,10 @@
             text-align: center;
             margin: 0;
             padding: 20px;
-            /* Mehrere Hintergrundbilder für maximales Chaos! */
-            background-image: 
-                url('https://i.imgur.com/LhB2c3m.png'), /* Frankfurt Skyline (PNG, muss vorher hochgeladen werden) */
-                url('https://i.imgur.com/3Zz3z3j.gif'), /* Eintracht Adler */
+            /* Hintergrundbilder für maximales Chaos! */
+            background-image:
+                url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjA2NHFsd2x4dm13a29iM3IxdTgzbjU2NHFkbW95Z3VzbnFhMnV4YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Xgqf2iM0V54XJ3eY70/giphy.gif'), /* Neue Skyline GIF */
+                url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWNha2NhaWhhaWp5ejhvc2Q5cXVhMDcwcW93c2w2YW9sZmR1azB3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C2oQ7w5WlqL26hD02M/giphy.gif'), /* Neuer Eintracht Adler GIF */
                 url('https://web.archive.org/web/20091027103135/http://geocities.com/Tokyo/Temple/4694/stars.gif'); /* Sterne */
             background-repeat: no-repeat, no-repeat, repeat; /* Nur Sterne wiederholen sich */
             background-position: bottom center, top right, center center; /* Positionierung */
@@ -23,177 +23,49 @@
             cursor: url('https://web.archive.org/web/20090729141005/http://www.geocities.com/Heartland/Plains/3214/star_ani.gif'), auto;
         }
         .container {
-            background-color: rgba(0, 0, 0, 0.8); /* Durchsichtiges Schwarz für Lesbarkeit über den Hintergründen */
+            background-color: rgba(0, 0, 0, 0.85); /* Etwas undurchsichtiger für bessere Lesbarkeit */
             border: 8px ridge #FF00FF; /* Knalliger Magenta 3D-Rahmen */
             padding: 25px;
-            max-width: 750px; /* Etwas breiter */
+            max-width: 750px;
             width: 90%;
             box-shadow: 10px 10px 0px 0px rgba(0,255,0,0.75); /* Grüner Schatten */
-            margin: 20px auto; /* Zentriert und Abstand */
+            margin: 20px auto;
         }
         h1 {
-            color: #00FFFF; /* Türkis */
-            font-size: 4em; /* Noch größer! */
+            color: #00FFFF;
+            font-size: 4em;
             font-weight: bold;
-            text-shadow: 4px 4px 0px #FF0000, 8px 8px 0px #FFFF00; /* Triple-Shadow! */
+            text-shadow: 4px 4px 0px #FF0000, 8px 8px 0px #FFFF00;
             animation: rave 1s infinite;
+            margin-bottom: 10px; /* Weniger Abstand nach unten */
         }
         h2 {
-            color: #FFD700; /* Gold */
+            color: #FFD700;
             font-size: 2em;
             margin-top: 20px;
         }
         p {
             font-size: 1.3em;
             color: #FFFFFF;
-            margin-bottom: 15px;
+            margin-bottom: 10px; /* Weniger Abstand nach unten */
         }
         img.main-image {
-            max-width: 80%;
+            max-width: 60%; /* Bild kleiner gemacht */
             height: auto;
-            border: 5px double #00FF00; /* Grüner Doppelrahmen */
-            margin-top: 20px;
+            border: 5px double #00FF00;
+            margin: 15px auto; /* Etwas weniger Abstand */
             box-shadow: 7px 7px 0px 0px rgba(255,0,255,0.7);
         }
         audio {
             width: 100%;
-            max-width: 400px;
-            margin: 30px auto;
-            border: 3px solid #FF0000; /* Roter Player-Rahmen */
+            max-width: 450px; /* Player etwas breiter */
+            margin: 20px auto; /* Player direkter im Fokus */
+            border: 3px solid #FF0000;
+            background-color: #ADD8E6; /* Hellblauer Player-Hintergrund */
         }
         marquee {
             font-size: 1.6em;
             color: #FFFF00;
             font-weight: bold;
-            margin-top: 20px;
-            background-color: rgba(255,0,255,0.3); /* Leicht transparenter Magenta-Hintergrund für die Laufschrift */
-            padding: 5px 0;
-        }
-        .frankfurt-items {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 25px;
-        }
-        .frankfurt-item {
-            margin: 10px;
-            color: #00FFFF; /* Türkis */
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .frankfurt-item img {
-            display: block;
-            margin: 5px auto;
-            border: 2px dotted #FFFFFF;
-        }
-        .miss-list {
-            text-align: left;
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px;
-            border: 3px dashed #FF0000; /* Rot */
-            background-color: rgba(0,0,0,0.4); /* Etwas dunkler */
-        }
-        .miss-list h2 {
-            color: #00FF00; /* Hellgrün */
-            text-align: center;
-        }
-        .miss-list ul {
-            list-style-type: ' ➡️ '; /* Neuer Listenpunkt Pfeil */
-            padding-left: 30px;
-        }
-        .miss-list li {
-            padding-bottom: 8px;
-            color: #FFFFFF;
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 1em;
-            color: #E6E6E6;
-        }
-        .footer img {
-            vertical-align: middle;
-            margin: 0 10px;
-        }
-
-        @keyframes rave {
-            0%   { text-shadow: 4px 4px 0px #FF0000, 8px 8px 0px #FFFF00; }
-            25%  { text-shadow: 4px 4px 0px #00FFFF, 8px 8px 0px #FF0000; }
-            50%  { text-shadow: 4px 4px 0px #FFFF00, 8px 8px 0px #00FFFF; }
-            75%  { text-shadow: 4px 4px 0px #FF00FF, 8px 8px 0px #FF00FF; }
-            100% { text-shadow: 4px 4px 0px #FF0000, 8px 8px 0px #FFFF00; }
-        }
-    </style>
-</head>
-<body>
-    <img src="https://media.giphy.com/media/xT0BKGj4tQc6n4C4j2/giphy.gif" alt="Frankfurt Skyline GIF" width="200" style="margin-top: 15px;">
-    <h1 style="color: #FF00FF; text-shadow: 5px 5px #00FF00;">Adieu, FFM - Hannah geht auf Tour!</h1>
-
-    <div class="container">
-        <p style="color: #00FF00; font-weight: bold;">Eure Hannah verlässt die Stadt, aber der Sound bleibt im Herzen!</p>
-        
-        <img src="hannah.jpg" alt="Hannah's cooles Bild" class="main-image">
-        
-        <marquee behavior="alternate" direction="right" scrollamount="8">
-            *** Techno-Nächte, Äbbelwoi-Seligkeit, und der beste Bahnhof der Welt! *** FFM I LOVE U! ***
-        </marquee>
-
-        <div class="frankfurt-items">
-            <div class="frankfurt-item">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG16OG8yYTNrd29yYzBwa2txZmh5MXZzd3E4a3p2bXQ3cGpwbXh5ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/v9K6B202X965O/giphy.gif" alt="Techno GIF" width="80">
-                Tanzhaus West & Robert Johnson - Meine zweite Heimat! ✨
-            </div>
-            <div class="frankfurt-item">
-                <pre style="font-family: monospace; color: #00FF00;">
-   /|\
-  / | \
- /  |  \
-----|----
-    |
-    |
-                </pre>
-                Ein letzter Schoppen im Tannenbaum! 🍻
-            </div>
-            <div class="frankfurt-item">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnJ2dWZ6OWFqYjE0bXl4eWNoc29xZTRqZmd6ZXk1ZWk3azY4MnI5OCZlcD12MV9pbnRlbmFsX2dpZl9ieV9pZCZjdD1z/26FKU1rW2X2D3Dk80/giphy.gif" alt="Train GIF" width="80">
-                Hauptbahnhof - Tor zur Welt, ade! 💔
-            </div>
-        </div>
-        
-        <div class="miss-list">
-            <h2>Was ich niemals vergessen werde:</h2>
-            <ul>
-                <li>Die Skyline bei Nacht vom Eisernen Steg</li>
-                <li>Ekstase im Tanzhaus West & Robert Johnson</li>
-                <li>Das herzliche "Gude" an jeder Ecke</li>
-                <li>Feste im Tannenbaum, bis die Lichter ausgingen</li>
-                <li>Die Hektik am Hauptbahnhof, die irgendwie dazugehört</li>
-                <li>Und natürlich: Ebbelwoi und Grüne Soße!</li>
-            </ul>
-        </div>
-        
-        <audio controls autoplay>
-            <source src="unsersound.mp3" type="audio/mpeg">
-            Dein Browser kann das net abspiele, du Bembel.
-        </audio>
-    </div>
-
-    <div class="footer">
-        <p style="color: #FFD700;">
-            <img src="https://web.archive.org/web/20091027002213/http://geocities.com/pc_pal_2000/new.gif" alt="New!">
-            Eintracht für immer im Herzen!
-            <img src="https://web.archive.org/web/20091027002213/http://geocities.com/pc_pal_2000/new.gif" alt="New!">
-        </p>
-        <p style="color: #00FF00;">
-            Danke für alles, FFM! Bleibt so verrückt, wie ihr seid!
-        </p>
-        <p style="color: #FF00FF;">
-            <img src="https://web.archive.org/web/20091027054522/http://geocities.com/jameel_bukhari/Counter.gif" alt="Counter" style="height: 30px;">
-            <span style="font-size: 1.5em;">Besucher seit Hannahs Abschied: </span>
-            <span style="font-size: 2em; color: #00FFFF;">1</span>
-        </p>
-        <p style="color: #FFFF00;">© 2002-2024 Hannah's Frankfurt Farewell Productions</p>
-    </div>
-
-</body>
-</html>
+            margin-top: 15px; /* Weniger Abstand */
+            background-color: rgba(255,0,255,0.3);
