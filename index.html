@@ -13,19 +13,19 @@
             margin: 0;
             padding: 20px;
             background-image:
-                url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjA2NHFsd2x4dm13a29iM3IxdTgzbjU2NHFkbW95Z3VzbnFhMnV4YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Xgqf2iM0V54XJ3eY70/giphy.gif'),
-                url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWNha2NhaWhhaWp5ejhvc2Q5cXVhMDcwcW93c2w2YW9sZnR1azB3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C2oQ7w5WlqL26hD02M/giphy.gif'),
+                url('https://media.giphy.com/media/brGWUhYh2vvFrtDx63/giphy.gif'), /* Neue Skyline */
+                url('https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cnJxNDZ1N2V4eXdjeTJveDVzYmg2a3F0NzBwM3E5ZDlmM2x2NHFsaSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/SUcro4UlDFik9ntUfN/giphy.gif'), /* Neuer Adler */
                 url('https://web.archive.org/web/20091027103135/http://geocities.com/Tokyo/Temple/4694/stars.gif');
             background-repeat: no-repeat, no-repeat, repeat;
             background-position: bottom center, top right, center center;
-            background-size: 100% auto, auto, auto;
-            cursor: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW11aXZ0eTJnZDFycmcxY2I2N25yeW5rYjYyZ3p6aXp5c3hnd2ZpZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xT0BKGj4tQc6n4C4j2/giphy.gif'), auto;
+            background-size: 100% auto, 150px, auto; /* Adler etwas kleiner */
+            cursor: url('https://i.pinimg.com/originals/aa/4c/36/aa4c363159c6974ba0daf782684123bd.gif'), auto; /* Rauch-Cursor! */
         }
         .container {
             background-color: rgba(0, 0, 0, 0.85);
             border: 8px ridge #FF00FF;
             padding: 25px;
-            max-width: 750px;
+            max-width: 800px; /* Etwas breiter für mehr GIFs */
             width: 90%;
             box-shadow: 10px 10px 0px 0px rgba(0,255,0,0.75);
             margin: 20px auto;
@@ -61,9 +61,39 @@
             font-size: 1.6em;
             color: #FFFF00;
             font-weight: bold;
-            margin-top: 25px; /* Etwas mehr Abstand nach dem Player */
+            margin-top: 25px;
             background-color: rgba(255,0,255,0.3);
             padding: 5px 0;
+        }
+        .gif-bar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            padding: 10px;
+            border-top: 4px dashed #00FFFF;
+            border-bottom: 4px dashed #00FFFF;
+        }
+        .frankfurt-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .frankfurt-item {
+            margin: 8px;
+            color: #00FFFF;
+            font-weight: bold;
+            font-size: 1.1em;
+            flex-basis: 200px; /* Basisbreite für Flexbox-Elemente */
+        }
+        .frankfurt-item img {
+            display: block;
+            margin: 5px auto;
+            border: 2px dotted #FFFFFF;
+            max-width: 120px;
         }
         .guestbook {
             background-color: rgba(255, 255, 255, 0.1);
@@ -84,11 +114,29 @@
             border-bottom: 1px dashed #CCC;
             padding-bottom: 10px;
         }
-        /* ... restliche Styles bleiben gleich ... */
+        .footer {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #E6E6E6;
+        }
+        .footer img {
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+
+        @keyframes rave {
+            0%   { text-shadow: 4px 4px 0px #FF0000, 8px 8px 0px #FFFF00; }
+            25%  { text-shadow: 4px 4px 0px #00FFFF, 8px 8px 0px #FF0000; }
+            50%  { text-shadow: 4px 4px 0px #FFFF00, 8px 8px 0px #00FFFF; }
+            75%  { text-shadow: 4px 4px 0px #FF00FF, 8px 8px 0px #FF00FF; }
+            100% { text-shadow: 4px 4px 0px #FF0000, 8px 8px 0px #FFFF00; }
+        }
     </style>
 </head>
 <body>
-    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3VldGhkamZ0bDQybTh2a3V6cXV4d293dGNqdG9nZTFoMDR1NHAwZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/l0HlSH0Kk24h3Cj5C/giphy.gif" alt="Abschied GIF" width="150" style="margin-top: 15px;">
+    <img src="https://i.pinimg.com/originals/aa/4c/36/aa4c363159c6974ba0daf782684123bd.gif" alt="Blinking Welcome GIF">
+    <img src="https://c.tenor.com/eImAGHmY6oIAAAAd/tenor.gif" alt="Waving Goodbye GIF" width="150" style="margin-top: 15px;">
+    
     <h1 style="color: #FF00FF; text-shadow: 5px 5px #00FF00;">Adieu, FFM - Hannah macht 'nen Abflug!</h1>
 
     <div class="container">
@@ -106,8 +154,29 @@
             *** Techno-Nächte, Äbbelwoi-Seligkeit, und der beste Bahnhof der Welt! *** FFM I LOVE U! ***
         </marquee>
         
+        <div class="gif-bar">
+            <img src="https://64.media.tumblr.com/2ca1dcad41761d638a2660a01caec157/tumblr_o1bkxiCAUf1un4hu7o1_500.gif" alt="Spinning Rave Smiley" height="80">
+            <img src="https://vignette.wikia.nocookie.net/project-g/images/5/52/Yin_Yang.gif/revision/latest?cb=20170828203525" alt="Spinning Yin-Yang" height="80">
+            <img src="https://c.tenor.com/qbjRw2WFHXsAAAAd/tenor.gif" alt="Spinning Heart" height="80">
+        </div>
+
+        <div class="frankfurt-items">
+            <div class="frankfurt-item">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3R2b2xuMXRra3JyNWpyYjhsZXdoaWViajl4MDkzaGh4a21scWVwZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MOkolBsxfGbQljunPj/giphy.gif" alt="Robert Johnson GIF">
+                Robert Johnson
+            </div>
+            <div class="frankfurt-item">
+                <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dWE3bXo5YmU5bGU3bmEzejJid2JtdmRtNDlsNHV1MWFodXJ4bXF2NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/rNmkjpa6ZELHoWHP4Z/giphy.gif" alt="Tanzhaus West GIF">
+                Tanzhaus West
+            </div>
+            <div class="frankfurt-item">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWNtbzUxY3F0MWp2N29rcGxwOHlob2czeXNkbW8ybTliamVhYXNucyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/V0S0Bu9OYFT0XKSSN0/giphy.gif" alt="Smoking GIF" height="90">
+                Chillen am Mainufer
+            </div>
+        </div>
+
         <div class="guestbook">
-            <h2>~*~* Hannah's Gästebuch *~*~</h2>
+            <h2><img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa21946a767e258d9/image/id28bdfdb9e81413a/version/1396859528/image.gif" alt="Spinning @" height="40" style="vertical-align: middle;"> Hannah's Gästebuch <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa21946a767e258d9/image/id28bdfdb9e81413a/version/1396859528/image.gif" alt="Spinning @" height="40" style="vertical-align: middle;"></h2>
             <div class="entry">
                 <strong>DJ Frankfurt-Beat (aus Offenbach) schrieb:</strong>
                 <p><em>Gude Hannah! Deine Beats waren immer der Hammer! Die Technoszene in FFM wird dich vermissen. Komm bald mal wieder auf einen Gig zurück! Peace out!</em></p>
@@ -116,11 +185,24 @@
                 <strong>Oma Erna (aus Sachsenhausen) schrieb:</strong>
                 <p><em>Ach mein Schnuggelsche, musst du denn wirklich fort? Wer kocht mir jetzt die beste Grüne Soße? Pass auf dich auf und lass mal wieder von dir hören! Ade!</em></p>
             </div>
-            </div>
+        </div>
     </div>
 
     <div class="footer">
-        </div>
+        <p style="color: #FFD700;">
+            <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cnJxNDZ1N2V4eXdjeTJveDVzYmg2a3F0NzBwM3E5ZDlmM2x2NHFsaSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/SUcro4UlDFik9ntUfN/giphy.gif" alt="Eintracht GIF" height="40" style="margin-right: 5px;">
+            Eintracht für immer im Herzen!
+            <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cnJxNDZ1N2V4eXdjeTJveDVzYmg2a3F0NzBwM3E5ZDlmM2x2NHFsaSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/SUcro4UlDFik9ntUfN/giphy.gif" alt="Eintracht GIF" height="40" style="margin-left: 5px;">
+        </p>
+        <p style="color: #00FF00;">
+            Danke für alles, FFM! Bleibt so verrückt, wie ihr seid!
+        </p>
+        <p style="color: #FF00FF;">
+            <span style="font-size: 1.5em;">Besucher seit Hannahs Abschied: </span>
+            <span style="font-size: 2em; color: #00FFFF;">1</span>
+        </p>
+        <p style="color: #FFFF00;">© 2002-2024 Hannah's Frankfurt Farewell Productions</p>
+    </div>
 
 </body>
 </html>
