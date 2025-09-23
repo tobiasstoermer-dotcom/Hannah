@@ -69,3 +69,134 @@
             font-weight: bold;
             margin-top: 15px; /* Weniger Abstand */
             background-color: rgba(255,0,255,0.3);
+            padding: 5px 0;
+        }
+        .frankfurt-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 20px; /* Abstand nach unten für den Player */
+        }
+        .frankfurt-item {
+            margin: 8px;
+            color: #00FFFF;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .frankfurt-item img {
+            display: block;
+            margin: 5px auto;
+            border: 2px dotted #FFFFFF;
+        }
+        .miss-list {
+            text-align: left;
+            display: inline-block;
+            margin-top: 15px;
+            padding: 15px;
+            border: 3px dashed #FF0000;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .miss-list h2 {
+            color: #00FF00;
+            text-align: center;
+        }
+        .miss-list ul {
+            list-style-type: ' ➡️ ';
+            padding-left: 30px;
+        }
+        .miss-list li {
+            padding-bottom: 8px;
+            color: #FFFFFF;
+        }
+        .footer {
+            margin-top: 20px; /* Weniger Abstand */
+            font-size: 1em;
+            color: #E6E6E6;
+        }
+        .footer img {
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+
+        @keyframes rave {
+            0%   { text-shadow: 4px 4px 0px #FF0000, 8px 8px 0px #FFFF00; }
+            25%  { text-shadow: 4px 4px 0px #00FFFF, 8px 8px 0px #FF0000; }
+            50%  { text-shadow: 4px 4px 0px #FFFF00, 8px 8px 0px #00FFFF; }
+            75%  { text-shadow: 4px 4px 0px #FF00FF, 8px 8px 0px #FF00FF; }
+            100% { text-shadow: 4px 4px 0px #FF0000, 8px 8px 0px #FFFF00; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3VldGhkamZ0bDQybTh2a3V6cXV4d293dGNqdG9nZTFoMDR1NHAwZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/l0HlSH0Kk24h3Cj5C/giphy.gif" alt="Abschied GIF" width="150" style="margin-top: 15px;">
+    <h1 style="color: #FF00FF; text-shadow: 5px 5px #00FF00;">Adieu, FFM - Hannah geht auf Tour!</h1>
+
+    <div class="container">
+        <p style="color: #00FF00; font-weight: bold;">Eure Hannah verlässt die Stadt, aber der Sound bleibt im Herzen!</p>
+        
+        <img src="hannah.jpg" alt="Hannah's cooles Bild" class="main-image">
+        
+        <marquee behavior="alternate" direction="right" scrollamount="8">
+            *** Techno-Nächte, Äbbelwoi-Seligkeit, und der beste Bahnhof der Welt! *** FFM I LOVE U! ***
+        </marquee>
+
+        <div class="frankfurt-items">
+            <div class="frankfurt-item">
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnFkcmF0amFwZ2txNTRpczQyOGlwdXB4eGd0NXF0aDNqNmc0a2p4YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WwL94Wq9VjJv7l3xLd/giphy.gif" alt="Techno GIF" width="80">
+                Tanzhaus West & Robert Johnson - Meine zweite Heimat! ✨
+            </div>
+            <div class="frankfurt-item">
+                <pre style="font-family: monospace; color: #00FF00;">
+   /|\
+  / | \
+ /  |  \
+----|----
+    |
+    |
+                </pre>
+                Ein letzter Schoppen im Tannenbaum! 🍻
+            </div>
+            <div class="frankfurt-item">
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTlwNGgxb3JsdXJqNTQxZXJmcXkxYXp6ZGw0ZDN2eHZ2eXFqY2Z1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/f80rQ6vM1O9zS/giphy.gif" alt="Train GIF" width="80">
+                Hauptbahnhof - Tor zur Welt, ade! 💔
+            </div>
+        </div>
+        
+        <div class="miss-list">
+            <h2>Was ich niemals vergessen werde:</h2>
+            <ul>
+                <li>Die Skyline bei Nacht vom Eisernen Steg</li>
+                <li>Ekstase im Tanzhaus West & Robert Johnson</li>
+                <li>Das herzliche "Gude" an jeder Ecke</li>
+                <li>Feste im Tannenbaum, bis die Lichter ausgingen</li>
+                <li>Die Hektik am Hauptbahnhof, die irgendwie dazugehört</li>
+                <li>Und natürlich: Ebbelwoi und Grüne Soße!</li>
+            </ul>
+        </div>
+        
+        <audio controls autoplay>
+            <source src="unsersound.mp3" type="audio/mpeg">
+            Dein Browser kann das net abspiele, du Bembel.
+        </audio>
+    </div>
+
+    <div class="footer">
+        <p style="color: #FFD700;">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTV6Z25nNWt3YzBtbXo5eGtxbHFhMWY4Z2NzaW13Z2xxdGF1aHdyMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/l0O9z2W4mNprX2Xde/giphy.gif" alt="Eintracht GIF" height="40" style="margin-right: 5px;">
+            Eintracht für immer im Herzen!
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTV6Z25nNWt3YzBtbXo5eGtxbHFhMWY4Z2NzaW13Z2xxdGF1aHdyMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/l0O9z2W4mNprX2Xde/giphy.gif" alt="Eintracht GIF" height="40" style="margin-left: 5px;">
+        </p>
+        <p style="color: #00FF00;">
+            Danke für alles, FFM! Bleibt so verrückt, wie ihr seid!
+        </p>
+        <p style="color: #FF00FF;">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzh0czB0bHBjdTN4bmw1ZTFoMGwzZmZlb2I0Z2c0bW91eW90eHFmYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xT0BKGj4tQc6n4C4j2/giphy.gif" alt="Counter GIF" style="height: 30px;">
+            <span style="font-size: 1.5em;">Besucher seit Hannahs Abschied: </span>
+            <span style="font-size: 2em; color: #00FFFF;">1</span>
+        </p>
+        <p style="color: #FFFF00;">© 2002-2024 Hannah's Frankfurt Farewell Productions</p>
+    </div>
+
+</body>
+</html>
