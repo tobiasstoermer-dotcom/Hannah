@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~*~* Hannah's letzter Tanz in FFM! *~*~</title>
-   <style>
+    <style>
+        /* Unsichtbarer Player für Hintergrundmusik */
+        #background-music {
+            display: none;
+        }
+
         body {
             font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
             background-color: #1A1A1A;
@@ -17,10 +22,10 @@
                 url('https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cnJxNDZ1N2V4eXdjeTJveDVzYmg2a3F0NzBwM3E5ZDlmM2x2NHFsaSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/SUcro4UlDFik9ntUfN/giphy.gif'), /* Adler */
                 url('https://web.archive.org/web/20091027103135/http://geocities.com/Tokyo/Temple/4694/stars.gif'); /* Sterne */
             background-repeat: no-repeat, no-repeat, repeat;
-            background-position: top center, top right, center center; /* Skyline jetzt oben */
+            background-position: top center, top right, center center;
             background-size: 100% auto, 150px, auto;
-            background-attachment: fixed, scroll, scroll; /* WICHTIG: Skyline ist jetzt fixiert! */
-            cursor: url('https://i.pinimg.com/originals/aa/4c/36/aa4c/363159c6974ba0daf782684123bd.gif'), auto;
+            background-attachment: fixed, scroll, scroll;
+            cursor: url('https://i.pinimg.com/originals/aa/4c/36/aa/4c/363159c6974ba0daf782684123bd.gif'), auto;
         }
         .container {
             background-color: rgba(0, 0, 0, 0.85);
@@ -70,7 +75,7 @@
             gap: 15px;
         }
         .gif-parade img {
-            height: 160px; /* VERGRÖSSERT: Doppelte Höhe für alle GIFs in der Parade */
+            height: 160px;
             width: auto;
             max-width: 100%;
         }
@@ -81,26 +86,6 @@
             margin-top: 25px;
             background-color: rgba(255,0,255,0.3);
             padding: 5px 0;
-        }
-        .frankfurt-items {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .frankfurt-item {
-            margin: 8px;
-            color: #00FFFF;
-            font-weight: bold;
-            font-size: 1.1em;
-            flex-basis: 200px;
-        }
-        .frankfurt-item img {
-            display: block;
-            margin: 5px auto;
-            border: 2px dotted #FFFFFF;
-            max-width: 120px;
         }
         .guestbook {
             background-color: rgba(255, 255, 255, 0.1);
@@ -150,6 +135,8 @@
     </style>
 </head>
 <body>
+    <audio id="background-music" src="sunglassesatnight.mp3" loop></audio>
+
     <h1 style="color: #FF00FF; text-shadow: 5px 5px #00FF00;">Adieu, FFM - Hannah macht 'nen Abflug!</h1>
 
     <div class="container">
@@ -164,7 +151,7 @@
         <p style="font-size: 0.9em; color: #CCCCCC;">(Klick auf Play, falls die Musik nicht von selbst startet!)</p>
         
         <div class="gif-parade">
-             <img src="https://i.pinimg.com/originals/aa/4c/36/aa4c363159c6974ba0daf782684123bd.gif" alt="Blinking Welcome GIF">
+             <img src="https://i.pinimg.com/originals/aa/4c/36/aa/4c/363159c6974ba0daf782684123bd.gif" alt="Blinking Welcome GIF">
             <img src="https://c.tenor.com/eImAGHmY6oIAAAAd/tenor.gif" alt="Waving Goodbye GIF">
             <img src="https://64.media.tumblr.com/2ca1dcad41761d638a2660a01caec157/tumblr_o1bkxiCAUf1un4hu7o1_500.gif" alt="Spinning Rave Smiley">
             <img src="https://64.media.tumblr.com/b7156a5fbb7894074b7dc129df4ee035/tumblr_o1blzovqrG1un4hu7o1_500.gif" alt="Spinning Yin-Yang">
@@ -175,7 +162,7 @@
             *** Nächte im Robert Johnson, Abende in der Pracht, Sonnenaufgang am Main! *** FFM I LOVE U! ***
         </marquee>
 
-<div class="guestbook">
+    <div class="guestbook">
             <h2><img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa21946a767e258d9/image/id28bdfdb9e81413a/version/1396859528/image.gif" alt="Spinning @" height="40" style="vertical-align: middle;"> Hannah's Gästebuch <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa21946a767e258d9/image/id28bdfdb9e81413a/version/1396859528/image.gif" alt="Spinning @" height="40" style="vertical-align: middle;"></h2>
             
             <div class="entry"><strong>Ein Raver (aus dem Robert Johnson) schrieb:</strong><p><em>Gude Hannah! Niemand hat den Dancefloor so zum Beben gebracht wie du! Die Nächte in Offenbach werden ohne deine Energie nicht mehr dieselben sein. Mach's gut!</em></p><small>28. Juli 2025</small></div>
@@ -228,7 +215,40 @@
             <div class="entry"><strong>Joschka Fischer (aus dem Westend) schrieb:</strong><p><em>Frankfurt zu verlassen, das ist schon was. Da verlässt man nicht nur eine Stadt, sondern ein Gefühl. Aber wer sich nicht bewegt, bewegt auch nichts. In diesem Sinne: Machen Sie's gut!</em></p><small>15. März 2025</small></div>
 
         </div>
+
     </div>
     
-    </body>
+    <div class="footer">
+         <p style="color: #FFD700;">
+            <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cnJxNDZ1N2V4eXdjeTJveDVzYmg2a3F0NzBwM3E5ZDlmM2x2NHFsaSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/SUcro4UlDFik9ntUfN/giphy.gif" alt="Eintracht GIF" height="40" style="margin-right: 5px;">
+            Eintracht für immer im Herzen!
+            <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cnJxNDZ1N2V4eXdjeTJveDVzYmg2a3F0NzBwM3E5ZDlmM2x2NHFsaSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/SUcro4UlDFik9ntUfN/giphy.gif" alt="Eintracht GIF" height="40" style="margin-left: 5px;">
+        </p>
+        <p style="color: #00FF00;">
+            Danke für alles, FFM! Bleibt so verrückt, wie ihr seid!
+        </p>
+        <p style="color: #FF00FF;">
+            <span style="font-size: 1.5em;">Besucher seit Hannahs Abschied: </span>
+            <span style="font-size: 2em; color: #00FFFF;">1</span>
+        </p>
+        <p style="color: #FFFF00;">© 2002-2025 Hannah's Frankfurt Farewell Productions</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backgroundMusic = document.getElementById('background-music');
+            
+            backgroundMusic.volume = 0.2;
+
+            function playMusicOnClick() {
+                backgroundMusic.play().catch(error => {
+                    console.log('Autoplay der Hintergrundmusik wurde vom Browser verhindert:', error);
+                });
+            }
+
+            document.body.addEventListener('click', playMusicOnClick, { once: true });
+        });
+    </script>
+
+</body>
 </html>
